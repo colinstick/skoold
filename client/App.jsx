@@ -21,7 +21,7 @@ function App() {
   
   const [ws, setWs] = useState(null);
 
-  const wsUrl = 'ws://192.168.50.135:8000';
+  // const wsUrl = 'ws://XXX.XXX.XXX:8000';
 
   const { sendJsonMessage, lastMessage, readyState } = useWebSocket(wsUrl, {
     onOpen: () => console.log('WebSocket connection established'),
